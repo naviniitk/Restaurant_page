@@ -1,0 +1,13 @@
+body {
+    background: url('./icecream_cone.jpg') no-repeat center center fixed;
+    text-align: center;
+    background-size: cover;
+}
+p {
+    font-size: 48px;
+}
+
+#content {
+    text-align: center;
+
+}
