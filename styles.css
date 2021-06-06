@@ -7,6 +7,24 @@ p {
     font-size: 48px;
 }
 
+.container {
+    background-color: rgba(240, 255, 255, 0.7);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.show {
+    margin: 10px;
+}
+
+.btn {
+    background-color: azure;
+    padding: 10px;
+    border-style: hidden;
+}
+
 #content {
     text-align: center;
 
