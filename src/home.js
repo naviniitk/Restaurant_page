@@ -1,12 +1,9 @@
-const myHome = (content) => {
-    
+const myHome = () => {
     const container = document.createElement("div");
-    const para = document.createElement("p");
-    para.innerText = "Welcome to our Restaurant";
-
-    container.style.backgroundColor = "white";
-    container.appendChild(para);
-    content.appendChild(container);
+    container.setAttribute("class", "container");
+    container.textContent = "Celebrate your best moments with Ice-cream of your flavor.";
+    
+    content.replaceChild(container, content.childNodes[0]);
 };
 
 export {myHome}

@@ -1,28 +1,28 @@
 import {myHome} from './home'
 import {myMenu} from './menu'
+import {myContacts} from './contacts'
 
-const header = document.createElement("header")
 const home = document.createElement("button");
 const menu = document.createElement("button");
 const contacts = document.createElement("button");
 
-home.setAttribute("class", "tabs");
-home.setAttribute("class", "tabs");
-home.setAttribute("class", "tabs");
-
-home.innerText = "Home";
-menu.innerText = "Menu";
-contacts.innerText = "Contacts";
-
-header.appendChild(home);
-header.appendChild(menu);
-header.appendChild(contacts);
+home.setAttribute("class", "btn");
+menu.setAttribute("class", "btn");
+contacts.setAttribute("class", "btn");
 
 const content = document.getElementById("content");
-content.appendChild(header);
 
+const navbar = document.createElement("div");
+navbar.setAttribute("class", "navbar");
+document.body.insertBefore(navbar, document.body.children[0]);
 
+navbar.append(home, menu, contacts);
 
+home.textContent = "Home";
+menu.textContent = "Menu";
+contacts.textContent = "Contact Us";
 
-home.onclick = myHome(content);
-menu.onclick = myMenu(content);
+home.onclick = myHome;
+menu.onclick = myMenu;
+contacts.onclick = myContacts;
+home.click();
