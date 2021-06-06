@@ -19,6 +19,9 @@ p {
     margin: 10px;
 }
 
+.navbar {
+    background-color: azure;
+}
 .btn {
     background-color: azure;
     padding: 10px;
